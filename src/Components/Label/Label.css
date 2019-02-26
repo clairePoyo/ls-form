@@ -1,0 +1,18 @@
+.Label-container {
+  position: relative;
+  margin: 10px;
+  height: 70px;
+}
+
+.Label__text {
+  color: #36475e;
+  margin: 10px 0 8px;
+  font-size: 13px;
+  display: block;
+  transition: color .3s ease-out;
+}
+
+.Label__text--disabled {
+  color: #bbb;
+}
+

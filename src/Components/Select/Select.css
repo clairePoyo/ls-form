@@ -1,0 +1,46 @@
+.Select {
+  border-style: none;
+  border-bottom: 1px dotted #bbb;
+  transition: border .3s ease-out;
+  background-color: transparent;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.Select-container {
+  position: relative;
+}
+
+.Select-container::after {
+  content: ">";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 15px;
+  transition: color .3s ease-out;
+}
+
+.Select,
+.Select option {
+  border-radius: 0;
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Select-container:hover::after {
+  color: #3bc2b5;
+}
+
+.Select:focus {
+  border-bottom: 1px solid #3bc2b5;
+  outline: 0;
+}
+
+.Select:-webkit-autofill,
+.Select:-webkit-autofill:hover, 
+.Select:-webkit-autofill:focus, 
+.Select:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
